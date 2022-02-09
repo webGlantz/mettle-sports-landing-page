@@ -1,0 +1,179 @@
+/* Reset */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* Style Guide */
+h1 {
+  font-family: "sporty-pro", sans-serif;
+  font-size: 70px;
+  font-weight: 500;
+  color: #ffffff;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 77px;
+  margin-bottom: 35px;
+}
+
+h2 {
+  font-family: "Helvetica-Bold", sans-serif;
+  font-size: 32px;
+  color: #ffffff;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+
+/* Styles */
+
+#main-info {
+  height: calc(100vh - 230px);
+  background-color: rgba(35,31,32,0.70);
+}
+
+#main-info video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  position: fixed;
+}
+
+.info-container {
+  display: flex;
+  margin: auto;
+  height: 100%;
+  width: 100%;
+}
+
+.info-container .text-container {
+  display: flex;
+  flex-direction: column-reverse;
+  margin: auto;
+}
+
+.cta-btn {
+  display: flex;
+  margin: auto;
+  height: 50px;
+}
+
+.cta-btn button {
+  border: .88px solid #ffffff;
+  background-color: rgba(35,31,32,0.5);
+
+  height: 60px;
+
+  padding: 10px;
+
+  color: #FFFFFF;
+  font-family: Helvetica;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.cta-btn button:hover {
+  cursor: pointer;
+}
+
+.embedded-video {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.embedded-video iframe {
+  margin: auto;
+}
+
+footer {
+  height: 230px;
+  background: url('./assets/Horizontal-Tear.png');
+  background-color: rgba(35,31,32,0.7);
+  background-size: cover;
+}
+
+footer .icon-container {
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+  width: auto;
+  max-width: 1440px;
+  margin: auto;
+  padding-top: 48px;
+}
+
+footer .icon-container img {
+  max-height: 100%;
+}
+
+footer .icon-container .left-logo,
+footer .icon-container .right-logo, 
+footer .icon-container .middle-btn {
+  max-height: 100%;
+  display: flex;
+  margin: auto;
+
+}
+
+.left-logo,
+.right-logo {
+  max-width: 15%;
+}
+
+.middle-btn {
+  max-width: 33%;
+}
+.sponsor-btn {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+  height: 88px;
+  width: 421px;
+  background-color: #231F20;
+
+  color: #FFFFFF;
+  font-family: "sporty-pro";
+  font-size: 28px;
+  line-height: 35px;
+  text-decoration: none;
+
+  margin: auto;
+
+  box-shadow: 0 2px 12px 0 rgba(0,0,0,0.5);
+}
+
+@media only screen and (max-width: 768px) {
+.sponsor-btn {
+  font-size: 20px;
+}
+}
